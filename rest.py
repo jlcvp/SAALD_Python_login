@@ -45,15 +45,13 @@ class login:
 		print 'login bateu'
 		if child.attrib['password'] == params.password:	#match senha
 		    print 'senha bateu'
-		    ##success= chama_autenticacao(params.username, params.livro)
+		    chama_autenticacao(params.username, params.livro)
 		    return True
 	return False
     
     def chama_autenticacao(user,livro):
 	##colocar o logica de pos login aqui, registrar o livro no nome do userdd
 	
-	return True; ##true caso login ok		    
-        	
 
 if __name__ == "__main__":
     app.run()
